@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #000000;
+  font-family: "Jost";
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+  height: 100px;
+}
+/* --------------
+   Link Styles
+-----------------*/
+
+a {
+  text-decoration: none;
+}
+
+.links-bar {
+  font-size: 16px;
+}
+
+.links-bar a,
+.navbar a {
+  color: #222222;
+}
+
+.secondary-navbar a,
+.gallery-links a {
+  color: #000000;
+}
+
+.links-bar a:hover,
+.gallery-links a:hover,
+.secondary-navbar a:hover,
+.button:hover {
+  color: #e87f25;
+  cursor: pointer;
+}
+
+/* --------------
+   Header Styles
+-----------------*/
+
+.navbar {
+  position: relative;
+  top: -60px;
+  color: #ffffff;
+}
+
+.name {
+  font-size: 35px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+
+.subtitle {
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.links-bar {
+  margin: 0 auto;
+}
+
+.min-nav {
+  background-color: #ffffff;
+  text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10% 20% 7% 20%;
+}
+
+.button {
+  margin: 0 30px;
+}
+
+.gallery-links {
+  position: absolute;
+  display: none;
+  top: 200px;
+  right: 15%;
+  background-color: #ffffff;
+  box-shadow: rgb(0, 0, 0) 0px 7px 10px -5px;
+  z-index: 1;
+  flex-direction: column;
+  text-align: center;
+}
+
+.show {
+  display: flex;
+}
+
+.gallery-links a {
+  margin: 20px 25px;
+}
+
+.banner-image-container {
+  height: 100px;
+  background-image: url("https://albertlisi.github.io/isawesome/img/thinbanner.jpg");
+}
+
+footer {
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px;
+}
+
+/* --------------
+   Body Styles
+-----------------*/
+
+.text {
+  font-family: "Eb Garamond";
+  margin: 8% 5%;
+}
+
+p {
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 770px) {
+  .links-bar {
+    visibility: visible;
+  }
+
+  .gallery-links a {
+    margin: 0px 25px;
+  }
+
+  .gallery-links {
+    position: relative;
+    z-index: 0;
+    display: none;
+    top: 0;
+    right: 0;
+    background-color: #e2e2e2;
+    box-shadow: none;
+    margin: 0 17%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .min-nav {
+    display: none;
+  }
+
+  .secondary-navbar {
+    background-color: #e2e2e2;
+    text-align: center;
+  }
+  .fg-gallery {
+    margin-top: 50px;
+  }
+
+  /*------*/
+
+  .text {
+    margin: 5% 25%;
+  }
+}
