@@ -4,25 +4,99 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      name="Al Lisi Photography Landing Page"
-      content="Landing Page for Al Lisi Photography."
+      name="Yosemite Gallery"
+      content="Al Lisi Photography Yosemite Gallery"
     />
-    <link href="css/indexstyles.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="css/gallery.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Jost&display=swap"
       rel="stylesheet"
     />
-
     <title>Al Lisi Photography</title>
   </head>
 
   <body>
     <header>
-      <div class="name">ALBERT LISI</div>
-      <div class="enter-div">
-        <a class="enter" href="yosemite.html">ENTER</a>
+      <div class="banner-image-container"></div>
+      <div class="name">
+        ALBERT LISI
       </div>
     </header>
+    <div class="navbar">
+      <div class="min-nav">
+        <div class="button" id="button">Gallery &#9662;</div>
+      </div>
+      <div class="gallery-links hide" id="dropdown">
+        <a href="index.html">Yosemite</a>
+        <a href="yellowstone.html">Yellowstone</a>
+        <a href="ferncanyon.html">Fern Canyon</a>
+        <a href="laketahoe.html">Lake Tahoe</a>
+        <a href="foundry.html">Foundry</a>
+      </div>
+    </div>
+
+    <div class="fg-gallery">
+      <img
+        src="Yosemite/1.jpg"
+        alt="Yosemite #1"
+        width="100%"
+        height="100%"
+        class="fit"
+      />
+      <img
+        src="Yosemite/2.jpg"
+        alt="Yosemite #2"
+        width="100%"
+        height="100%"
+        class="fit"
+      />
+      <img
+        src="Yosemite/3.jpg"
+        alt="Yosemite #3"
+        width="100%"
+        height="100%"
+        class="fit"
+      />
+      <img
+        src="Yosemite/4.jpg"
+        alt="Yosemite #4"
+        width="100%"
+        height="100%"
+        class="fit"
+      />
+      <img
+        src="Yosemite/5.jpg"
+        alt="Yosemite #5"
+        width="100%"
+        height="100%"
+        class="fit"
+      />
+      <img
+        src="Yosemite/6.jpg"
+        alt="Yosemite #6"
+        width="100%"
+        height="100%"
+        class="fit"
+      />
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="modalbox">
+      <!-- The Close Button -->
+      <span class="close" id="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img id="expandedImg" src="" />
+    </div>
+
+    <footer>
+      <div class="links-bar">
+        <a href="about.html">About</a> |
+        <a href="mailto:alnlisi4@gmail.com">Contact</a>
+      </div>
+      <br />
+      &#169; 2021 Built by <a href="http://www.micaphan.com">MCAPHN</a>
+    </footer>
+    <script src="js/gallery.js"></script>
   </body>
 </html>
